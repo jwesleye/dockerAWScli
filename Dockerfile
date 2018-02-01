@@ -13,6 +13,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade awscli
 RUN pip install --upgrade s3cmd
 RUN pip install --upgrade python-magic
+RUN yum -y install openssh-clients
 RUN cd .
 RUN mkdir aws_certs
 ADD aws_certs/*.pem /aws_certs/
