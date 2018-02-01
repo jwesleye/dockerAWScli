@@ -12,3 +12,6 @@ add certs to aws_certs folder
 
 `docker run -it awscli bash`
 
+then to connect to awscli
+
+`ssh ec2-user@<IPADDRESS> -i /aws_certs/<CERTNAME>.pem`
