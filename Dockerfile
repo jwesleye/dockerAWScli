@@ -17,3 +17,4 @@ RUN yum -y install openssh-clients
 RUN cd .
 RUN mkdir aws_certs
 ADD aws_certs/*.pem /aws_certs/
+RUN chmod -R 400 /aws_certs/
