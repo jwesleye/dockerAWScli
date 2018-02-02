@@ -2,8 +2,6 @@
 
 FROM centos:7
 ENV container docker
-VOLUME [ "/sys/fs/cgroup" ]
-CMD ["/usr/sbin/init"]
 RUN echo "configuring for AWS"
 RUN yum -y update
 RUN yum install python
